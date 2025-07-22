@@ -1,9 +1,20 @@
-set = {"prajwal",23,32,"ram","shyam"}
-set2 = {"variable","just other",23,32,"so on"}
-print(set)
-print(set2)
-# print(set.union(set2))
-set.add("suresh")
-# print(set.intersection(set2))
-s2=set.issubset(set2)
-print(s2)
+class emp:
+    a=10
+    def __init__(self):
+        print(f"value of a is {self.a}")
+        print(f"hello world from emp")
+
+class emp2(emp):
+    b=20
+    def __init__(self):
+        super().__init__()
+        print(f"hello world from emp2")
+
+class emp3:
+    c=20
+    def __init__(self):
+        print(f"hello world from emp3")
+
+n = emp2()
+print(f"B is {n.b}")
+
