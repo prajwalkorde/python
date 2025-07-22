@@ -1,12 +1,10 @@
-class number:
+class employee:
+    name = "Wipro"
+    salary = 120000
+    print("this is part of class.")
 
-    def __init__(self, n):
-        self.n = n 
-    
-    def __add__(self, num): #pre defined function.
-        return self.n+num.n
-    
-n = number(1)
-m = number(2)
+    def __init__(self):
+        print("this is dunder method.")
 
-print(n+m)
+ram = employee()
+print(ram.name,ram.salary)

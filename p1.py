@@ -1,19 +1,12 @@
-    
-class developer:
-    print("this code is from developer section.")
+class emp:
+    lang = "python"
+    salary = 1200000
+    print(f"name of language is {lang} ")
 
-class employee:
-    company_name = "ITC"
-    name="ram"
-    print("this code is from employee section.")
+harry = emp()
+print(harry.lang,harry.salary)
 
-class tester(developer,employee):
-    n= "value"
-    print(f"value is {n}")
-    print("this code is from tester section")
-
-
-r=tester()
-print(f"company name is {r.company_name}\nemployee name is {r.name}")
-
-
+ram = emp()
+ram.lang = "javascript"
+ram.name = "RAM"
+print(ram.name)
